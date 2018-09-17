@@ -3,10 +3,10 @@ import ReactDOM from  'react-dom';
 import './index.css';
 
 function Square(props) {
-  return(
+  return (
     <button
       className="square"
-      onClick={props.onClick()}
+      onClick={props.onClick}
     >
       {props.value}
     </button>
@@ -54,8 +54,8 @@ class Game extends React.Component {
         squares: Array(9).fill(null),
       }],
       stepNumber: 0,
-      xIsNext: true,
-    }
+      xIsNext: true
+    };
   }
 
   handleClick(i) {
